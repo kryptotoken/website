@@ -1453,7 +1453,7 @@ blog post search form style end
 .navbar-toggler .icon-bar {
   width: 35px;
   height: 2px;
-  background-color: var(--primary-color);
+  background-color: var(--btn-bg);
   margin: 0px;
   display: block;
   -webkit-transition: all 0.2s;
@@ -1544,7 +1544,7 @@ blog post search form style end
     margin-bottom: 75px;
   }
   .navbar {
-    background-color: var(--accent-primary-bg);
+    background-color: #fff;
     -webkit-box-shadow: var(--shadow);
     box-shadow: var(--shadow);
   }
@@ -2049,6 +2049,11 @@ blog post search form style end
   }
   .home-banner-left-col .fourier-btn {
     margin-top: 25px;
+    width: 100%;
+    text-align: center;
+  }
+  .whole-market-content .primary-btn{
+    width: 100%;
   }
 }
 
