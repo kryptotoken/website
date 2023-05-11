@@ -1606,6 +1606,7 @@ blog post search form style end
   .logo {
     width: 130px;
     height: 40px;
+    object-fit: contain;
   }
 }
 
