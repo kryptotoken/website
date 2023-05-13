@@ -75,7 +75,7 @@
   --accent-tertiary-bg: #2b255a;
   --accent-fourier-bg: #171531;
   --btn-bg: #E12A26;
-  --btn-primary-bg: #282454;
+  --btn-primary-bg: #E6D226;
   --btn-secondary-bg: #2d2565;
   --btn-transparent: transparent;
   --btn-alternate-bg: #ffffff;
@@ -108,9 +108,9 @@
   --secondary-gradient: 90deg, rgb(204,24,188) 0%, rgb(255,131,64) 100%;
   --hover-gradient: 90deg, rgb(204,24,188) 0%, rgb(255,131,64) 100%;
   --border: 1px solid #2d295e;
-  --primary-border: 1px solid rgba(255, 255, 255, 0.2);
-  --secondary-border: 1px solid #6654e2;
-  --tertiary-border: 1px solid #010202;
+  --primary-border: 1px solid rgba(225, 255, 255, 0.2);
+  --secondary-border: 1px solid #E12A26;
+  --tertiary-border: 1px solid #E12A26;
   --fourier-border: 1px solid rgba(23, 21, 49, 0.2);
   --border-none: 0px solid transparent;
   --radius: 5px;
