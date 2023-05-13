@@ -185,7 +185,7 @@
 
     // about team carousel
     $(".owl-team-carousel").owlCarousel({
-      loop: true,
+      loop: false,
       margin: 10,
       nav: true,
       dots: false,
@@ -205,7 +205,7 @@
           items: 2,
         },
         992: {
-          items: 3,
+          items: 2,
         },
       },
     });
