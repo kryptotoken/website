@@ -445,6 +445,7 @@
     });
     setInterval(() => {
       getBurned();
+      getInfo();
     }, 5000);
 
     function getBurned(){
@@ -458,7 +459,17 @@
         }
       }, "json");
     }
+    function getInfo(){
+      $.get("https://api.dexscreener.com/latest/dex/tokens/0x5616bef3b80a00a0ddd35a33f169868f7b2f0c46", function (data) {
+        if(data.pairs.length > 0) {
+          const token = data.pairs[0];
+          const volume24Horas = token.volume.h24;
+          $("#volume24Horas").text("$"+volume24Horas);
+        }
+      }, "json");
+    }
     getBurned();
+    getInfo();
     
   });
 })(jQuery);
