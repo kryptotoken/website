@@ -9774,4 +9774,10 @@ blog post style end
     padding-top: 10px;
   }
 }
+
+#burned{
+  color: #ff0000;
+  font-size: 18px;
+  text-shadow: #fff 1px 0 10px;
+}
 /*# sourceMappingURL=main.css.map */

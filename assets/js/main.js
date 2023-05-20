@@ -443,5 +443,22 @@
     $(".single-character").on("input", function () {
       this.value = this.value.replace(/[^0-9]/g, "");
     });
+    setInterval(() => {
+      getBurned();
+    }, 5000);
+
+    function getBurned(){
+      $.get("https://api.gopluslabs.io/api/v2/token_security/56?contract_addresses=0x5616bef3b80a00a0ddd35a33f169868f7b2f0c46", function (data) {
+        if(data.message === "OK") {
+          const token = data.result['0x5616bef3b80a00a0ddd35a33f169868f7b2f0c46'];
+          const holderBurn = token.holders.find((holder) => holder.address === "0x0000000000000000000000000000000000000000");
+          const burnValue = holderBurn.balance;
+          console.log(holderBurn);
+          $("#burned").text(burnValue+" - "+(holderBurn.percent * 100).toFixed(2)+"%");
+        }
+      }, "json");
+    }
+    getBurned();
+    
   });
 })(jQuery);
